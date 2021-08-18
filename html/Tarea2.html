@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--css local-->
+    <link href="../css/navbarVertical.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <!--titulo de sidebar-->
+            <div class="sidebar-header">
+                <h3>Ejercicios</h3>
+            </div>
+
+            <!-- lista de conponentes  -->
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="../index.html">TAREA 1</a>
+                </li>
+                <li>
+                    <a href="Tarea2.html" onclick="buscarPhp(1)">Tarea 2 PDO</a>
+                </li>
+                <li>
+                    <a href="Tarea2.html" onclick="buscarPhp(2)">Tarea 2 mysqli</a>
+                </li>
+                <li>
+                    <a href="../php/index.php">Crud mysqli</a>
+                </li>
+                <li>
+                    <a href="../php/indexPoo.php">Crud POO</a>
+                </li>
+            </ul>
+            <!--footer del navbar-->
+            <ul class="list-unstyled CTAs">
+
+            </ul>
+        </nav>
+
+        <!-- contenido de la pagina   -->
+        <div id="content">
+            <!--navbar de contenido -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <!--boton que activa al siderbar-->
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <img id="iconoHamburguesa" src="../img/iconoHamburguesa.ico" alt="">
+                    </button>
+                 
+
+                    <!--boton para navbar-->
+                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-dark"></span>
+                    </button>
+
+                    <!--contenido del navbar-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul>
+                            <button data-user="1" class="btn btn-outline-info m-3" >Datos de la persona con ID = 1</button>
+                            <button data-user="[1,2,3]" class="btn btn-outline-info m-2" >datos de las personas con ID = 1, ID = 2 e ID = 3.</button> -
+                            <button data-user="-1" class="btn btn-outline-info " >Ningún usuario</button>
+                        </ul>
+            </nav>
+            <!--contenido del sitio web fuera de los navbars-->
+            <div id="response-container"></div>
+
+
+        </div>
+    </div>
+    <hr>
+    <div class="row m-3">
+        <div class="col-3 bg-light">
+            <img class="img-fluid" src="../img/img-w3c.png" alt="">
+        </div>
+        <div class="col-6 m-5">
+            <center>
+                <p>©Robin David Rodriguez Bautista </p>
+            </center>
+        </div>
+    </div>
+
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/miscript.js"></script>
+    <script src="../js/index.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

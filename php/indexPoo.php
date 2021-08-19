@@ -15,7 +15,7 @@
     <!--css local-->
     <link href="../css/navbarVertical.css" rel="stylesheet">
     <script type="text/javascript">
-        var url = "http://localhost/1Ajax-php-js/";
+        var url = "http://localhost/jorge/Ajax-php-js/";
     </script>
     <script src="../js/item-ajax-poo.js"></script>
 </head>
@@ -32,12 +32,13 @@
                     <h3>Ejercicios</h3>
                 </div>
 
-                <!-- lista de conponentes  -->
+                  <!-- lista de links que va a contener la siderbar -->
                 <ul class="list-unstyled components">
                 <li>
                     <a href="../index.html">TAREA 1</a>
                 </li>
                 <li>
+                    <!-- colocamos la funcion para que nos muestre que conexion va a tener --> 
                     <a href="../html/Tarea2.html" onclick="buscarPhp(1)">Tarea 2 PDO</a>
                 </li>
                 <li>

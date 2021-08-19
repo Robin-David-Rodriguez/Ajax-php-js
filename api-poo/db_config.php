@@ -6,6 +6,7 @@
     $username = 'root';
     $password = "";
     $dsn = "mysql:host=$hostname;dbname=$database;charset=UTF8";
+    // conexion a la base de datos con programacion orientada a objetos 
     try 
     {
         $db = new PDO($dsn, $username, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);

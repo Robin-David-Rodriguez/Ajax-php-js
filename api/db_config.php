@@ -1,5 +1,5 @@
 <?php
-
+// configuracion a la base de datos 
     $DB_USER = "root";
     $DB_PASSWORD = "";
     $DB_DATABASE =  "trabajo";

@@ -6,14 +6,14 @@ get_persons($_GET['id']);
 die("Solicitud no válida.");
 }
 function get_persons( $id ) {
-//Cambia por los detalles de tu base datos
+//atributos de la base de datos 
 $dbserver = "localhost";
 $dbuser = "root";
 $password = "";
 $dbname = "trabajo";
 
 
-
+// conexion de la base de datos
 try {      
     $dsn = "mysql:host=".$dbserver.";dbname=".$dbname;
     $dbh = new PDO($dsn, $dbuser,$password); 

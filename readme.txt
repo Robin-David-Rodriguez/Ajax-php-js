@@ -6,7 +6,6 @@ Documentación:
 - Presentar para la institución: SENA.
 - Número de ficha: 2252471.
 
-cambios en readmi 
 
 Programas utilizados:
 

@@ -9,7 +9,7 @@ VALUES ('".$post['title']."','".$post['description']."')";
 // ejecutamos la sentencias sql creada  
 $stm=$db->prepare($sql);
 $stm->execute();
-// creamo y ejecutamos la sentencia sql la cual va a mostrar los items y el orden  
+// creamos y ejecutamos la sentencia sql la cual va a mostrar los items y el orden  
 $sql = "SELECT * FROM items Order by id desc LIMIT 1";
 $stm=$db->prepare($sql);
 $stm->execute();

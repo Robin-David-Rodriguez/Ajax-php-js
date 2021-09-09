@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     var page = 1;
-    var current_page = 1;
+    var current_page = 5;
     var total_page = 0;
     var is_ajax_fire = 0;
 
@@ -13,7 +13,7 @@ $( document ).ready(function() {
     data: {page:page}
     }).done(function(data){
         console.log(data);
-    total_page = Math.ceil(data.total/5);
+    total_page = Math.ceil(data.total/25);
     current_page = page;
     $('#pagination').twbsPagination({
     totalPages: total_page,

@@ -9,7 +9,7 @@ $(document).ready(function () {
     function manageData() {
         $.ajax({
             dataType: 'json',
-            url: url + '../api/getData.php',
+            url: url+'api/getData.php',
             data: {
                 page: page
             }

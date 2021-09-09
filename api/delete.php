@@ -5,7 +5,7 @@ require 'db_config.php';
 $id = $_POST["id"];
 // creamos una sentencia sql  para eliminar los datos.
 // pasamos los datos a formato json
-$sql = "DELETE FROM items WHERE id = '".$id."'";
-$result = $mysqli->query($sql);
-echo json_encode([$id]);
+$sql = "DELETE FROM items WHERE id = '".$id."'"; // colocamos la sentencia sql para eliminar el campo el cual se lo pasamos con la variable $id
+$result = $mysqli->query($sql);                  // colocamos a que se ejecute la sentencia 
+echo json_encode([$id]);                         // colocamos todo en formato json 
 ?>

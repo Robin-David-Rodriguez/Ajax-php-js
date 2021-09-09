@@ -6,7 +6,7 @@ $id = $_POST["id"];
 // creamos la sentencia sql para eliminar items 
 $sql = "DELETE FROM items WHERE id = '".$id."'";
 // ejecutamos la sentencia sql  
-$stm=$db->prepare($sql);
+$stm=$db->prepare($sql); // preparamos y ejecutamos la sentencia sql
 $stm->execute();
 // colocamos los datos que quedaron en formato json
 echo json_encode([$id]);

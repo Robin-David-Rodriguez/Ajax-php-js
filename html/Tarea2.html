@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+   <!-- iniciamos con un container que va a contener todo -->
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -30,16 +30,19 @@
                     <a href="../index.html">TAREA 1</a>
                 </li>
                 <li>
-                    <!-- colocamos la funcion para que nos muestre que conexion va a tener --> 
+                    <!-- colocamos la funcion para que nos muestre por que camino va a estar la conexion  --> 
                     <a href="Tarea2.html" onclick="buscarPhp(1)">Tarea 2 PDO</a>
                 </li>
                 <li>
+                    <!-- colocamos la funcion dos para que se ejecute por al conexion mysqli  -->
                     <a href="Tarea2.html" onclick="buscarPhp(2)">Tarea 2 mysqli</a>
                 </li>
                 <li>
+                    <!-- le colocamos un link para que nos lleve al crud con conexion mysqli  -->
                     <a href="../php/index.php">Crud mysqli</a>
                 </li>
                 <li>
+                    <!-- le colcoamos un link para que nos lleve al crud con conexion pdo -->
                     <a href="../php/indexPoo.php">Crud POO</a>
                 </li>
             </ul>
@@ -57,6 +60,7 @@
                     <!--boton que activa al siderbar-->
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
+                        <!--colocamos el icono para el boton haburguesa -->
                         <img id="iconoHamburguesa" src="../img/iconoHamburguesa.ico" alt="">
                     </button>
                  
@@ -71,6 +75,7 @@
                     <!--contenido del navbar-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul>
+                            <!-- contenido para el nabvar para seleccionar el campo que desea mostrar -->
                             <button data-user="1" class="btn btn-outline-info m-3" >Datos de la persona con ID = 1</button>
                             <button data-user="[1,2,3]" class="btn btn-outline-info m-2" >datos de las personas con ID = 1, ID = 2 e ID = 3.</button> -
                             <button data-user="-1" class="btn btn-outline-info " >Ningún usuario</button>
@@ -80,15 +85,18 @@
             <div id="response-container"></div>
 
 
-        </div>
+        </div><!-- cerrar el contenido -->
     </div>
     <hr>
     <div class="row m-3">
         <div class="col-3 bg-light">
+            <!-- llamamos a la imagen para el logo de la w3c-->
             <img class="img-fluid" src="../img/img-w3c.png" alt="">
         </div>
         <div class="col-6 m-5">
+            <!--centramos el nombre del contenido del footer -->
             <center>
+                <!--colocamos el copyright-->
                 <p>©Robin David Rodriguez Bautista </p>
             </center>
         </div>
